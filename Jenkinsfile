@@ -6,7 +6,7 @@ pipeline {
         IMAGE_NAME = "hello-world-nginx"
         CONTAINER_NAME = "hello-world-container"
         HOST_PORT = "8081"
-        DOCKER_HUB_CREDENTIALS_ID = "docker-hub-credentials"
+        DOCKER_HUB_CREDENTIALS_ID = "anzer0300-dockerhub"
     }
 
     stages {
