@@ -23,6 +23,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([usernamePassword(credentialsId: DOCKER_HUB_CREDENTIALS_ID, passwordVariable: 'DOCKER_HUB_PASSWORD', usernameVariable: 'DOCKER_HUB_USERNAME')]) {
+                        echo "Logging into Docker Hub as: ${DOCKER_HUB_USERNAME}"
                         powershell "docker login -u ${DOCKER_HUB_USERNAME} -p ${DOCKER_HUB_PASSWORD}"
                         powershell "docker push ${DOCKER_HUB_REPO}:latest"
                     }
