@@ -1,0 +1,24 @@
+{
+  "name": "tp-5",
+  "type": "directory",
+  "path": ".",
+  "description": "Simple DevOps TP-5 project",
+  "children": [
+    {
+      "name": "index.html",
+      "type": "file",
+      "path": "index.html",
+      "description": "Main entry point displaying Hello World",
+      "dependencies": []
+    },
+    {
+      "name": "Dockerfile",
+      "type": "file",
+      "path": "Dockerfile",
+      "description": "Nginx Dockerfile for deploying index.html",
+      "dependencies": [
+        "index.html"
+      ]
+    }
+  ]
+}
