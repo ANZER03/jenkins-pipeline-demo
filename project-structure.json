@@ -19,6 +19,15 @@
       "dependencies": [
         "index.html"
       ]
+    },
+    {
+      "name": "Jenkinsfile",
+      "type": "file",
+      "path": "Jenkinsfile",
+      "description": "Jenkins pipeline using PowerShell for building and deploying the Docker image",
+      "dependencies": [
+        "Dockerfile"
+      ]
     }
   ]
 }
